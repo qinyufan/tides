@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "i-tab-bar": "/miniprogram_npm/iview-weapp/tab-bar/index",
+    "i-tab-bar-item": "/miniprogram_npm/iview-weapp/tab-bar-item/index"
+  }
+}
