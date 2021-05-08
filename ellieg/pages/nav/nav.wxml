@@ -1,10 +1,14 @@
 <!--pages/index/index.wxml-->
-<view class="w-tab-bar">
-  <i-tab-bar class="" current="{{ current }}" color="#fff" bindchange="handleChange">
-    <i-tab-bar-item key="homepage"   title="首页"></i-tab-bar-item>
-    <i-tab-bar-item key="group"   title="朋友"></i-tab-bar-item>
-    <i-tab-bar-item key="remind"   title="通知"></i-tab-bar-item>
-    <i-tab-bar-item key="mine"   title="我的"></i-tab-bar-item>
-</i-tab-bar>
+<view wx:if="{{current==='homepage'}}">
+  <m-index2></m-index2>
+</view>
+<view wx:if="{{current==='mine'}}">
+  <m-mine></m-mine>
+</view>
+<view class="w-tab-bar flx-row flx-con-around flx-itm-mid ">
+  <view class="" wx:for="{{list}}" wx:key="*this" data-curtab="{{item.tab}}" bindtap="handleChange" >
+    {{item.text}}
+  </view>
+
 </view>
 

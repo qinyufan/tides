@@ -17,3 +17,10 @@ App({
     userInfo: null
   }
 })
+
+// "window": {
+//   "backgroundTextStyle": "light",
+//   "navigationBarBackgroundColor": "#fff",
+//   "navigationBarTitleText": "Weixin",
+//   "navigationBarTextStyle": "black"
+// },

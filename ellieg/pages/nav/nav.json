@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "i-tab-bar": "/miniprogram_npm/iview-weapp/tab-bar/index",
-    "i-tab-bar-item": "/miniprogram_npm/iview-weapp/tab-bar-item/index"
+    "m-index": "/pages/index/index",
+    "m-mine": "/pages/mine/mine",
+    "m-index2": "/components/index/index"
   }
 }

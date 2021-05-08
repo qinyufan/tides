@@ -1,0 +1,56 @@
+.flx-dom{
+  display: flex !important;
+  display: -webkit-flex !important;
+  display: -webkit-box !important;
+}
+
+.flx-col{
+  display: flex ;
+  flex-flow:column nowrap;
+}
+
+.flx-row{
+  display: flex;
+  flex-flow:row nowrap;
+}
+.flx-con-mid{
+  justify-content: center;
+}
+.flx-con-start{
+  justify-content: flex-start;
+}
+
+.flx-con-end{
+  justify-content: flex-end;
+}
+
+.flx-con-between{
+  justify-content: space-between;
+}
+
+.flx-con-around{
+  justify-content: space-around;
+}
+
+.flx-itm-mid{
+  align-items: center;
+}
+.flx-itm-start{
+  align-items: flex-start;
+}
+
+.flx-itm-end{
+  align-items: flex-end;
+}
+
+.flx-itm-between{
+  align-items: space-between;
+}
+
+.flx-itm-around{
+  align-items: space-around;
+}
+
+.flx-wrap{
+  flex-wrap:wrap;
+}

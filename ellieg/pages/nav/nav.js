@@ -17,15 +17,21 @@ Page({
     color: "#7A7E83",
     selectedColor: "#fff",
     list: [{
-      pagePath: "/pages/index/index",
       iconPath: "",
       selectedIconPath: "",
-      text: "首页"
+      text: "首页",
+      tab:"homepage"
     }, {
-      pagePath: "/pages/friends/friends",
       iconPath: "",
       selectedIconPath: "",
-      text: "朋友"
+      text: "发布视频",
+      tab:"addvideo"
+    }, {
+
+      iconPath: "",
+      selectedIconPath: "",
+      text: "我",
+      tab:"mine"
     }]
   },
 
@@ -84,13 +90,11 @@ Page({
   onShareAppMessage: function () {
 
   },
-  handleChange({detail}){
-    console.log(detail)
+  handleChange(e){
+    console.log(e)
     this.setData({
-      current: detail.key
-   });
-   var url = this.data.paths[detail.key]
-   console.log(url)
-   wx.switchTab({url:url})
+      current:e.currentTarget.dataset.curtab
+    })
+
   },
 })
